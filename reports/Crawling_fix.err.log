@@ -1,0 +1,106 @@
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\jupyter_cache\executors\utils.py", line 58, in single_nb_execution
+    executenb(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\jupyter_core\utils\__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\nbclient\client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import pandas as pd
+def crawl_pta(url):
+
+    result = []
+    req = requests.get(url)
+    soup = BeautifulSoup(req.text, "lxml")
+
+    news_links = soup.find_all("li",{'data-id':'id-1'})
+    # #looping through article link
+    for idx,news in enumerate(news_links):
+        penulis = ""
+        dosen1 = ''
+        dosen2 = ''
+        news_dict = {}
+
+        # #find urll news
+        url_news = news.find('a',{'class':'gray button'}).get('href')
+
+        # find news content in url
+        req_news =  requests.get(url_news)
+        soup_news = BeautifulSoup(req_news.text, "lxml")
+
+        #Judul Jurnal
+        judul = soup_news.find('a',{'class':'title'}).text
+        # print("title:", title)
+
+        #Penulis, dospem I, dospem II
+        dt = soup_news.find_all('div',{'style':'padding:2px 2px 2px 2px;'})
+        penulis = dt[0].text.split(':')[1]
+        dosen1 = dt[1].text.split(':')[1]
+        dosen2 = dt[2].text.split(':')[1]
+
+        #Abstrak
+        abstrak = soup_news.find('p',{'align':'justify'}).text
+
+        #wrap in dictionary
+        news_dict['Judul'] = judul
+        news_dict['Penulis'] = penulis
+        news_dict['Dosen Pembimbing I'] = dosen1
+        news_dict['Dosen Pembimbing II'] = dosen2
+        news_dict['Abstrak'] = abstrak
+        result.append(news_dict)
+
+    return result
+# url = 'https://pta.trunojoyo.ac.id/welcome/index/5'
+# cr = crawl_kompas(url)
+# print(cr)
+data = []
+for i in range(1,10):
+  cr = crawl_pta('https://pta.trunojoyo.ac.id/c_search/byprod/10/%d'%i)
+  data = data+cr
+print(data)
+df = pd.DataFrame(data)
+
+# saving the dataframe
+df.to_csv('/content/drive/MyDrive/PPW/hasil/crawling_pta.csv')
+------------------
+
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mFeatureNotFound[0m                           Traceback (most recent call last)
+Cell [1;32mIn[2], line 50[0m
+[0;32m     48[0m data [38;5;241m=[39m []
+[0;32m     49[0m [38;5;28;01mfor[39;00m i [38;5;129;01min[39;00m [38;5;28mrange[39m([38;5;241m1[39m,[38;5;241m10[39m):
+[1;32m---> 50[0m   cr [38;5;241m=[39m [43mcrawl_pta[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mhttps://pta.trunojoyo.ac.id/c_search/byprod/10/[39;49m[38;5;132;43;01m%d[39;49;00m[38;5;124;43m'[39;49m[38;5;241;43m%[39;49m[43mi[49m[43m)[49m
+[0;32m     51[0m   data [38;5;241m=[39m data[38;5;241m+[39mcr
+[0;32m     52[0m [38;5;28mprint[39m(data)
+
+Cell [1;32mIn[2], line 6[0m, in [0;36mcrawl_pta[1;34m(url)[0m
+[0;32m      4[0m result [38;5;241m=[39m []
+[0;32m      5[0m req [38;5;241m=[39m requests[38;5;241m.[39mget(url)
+[1;32m----> 6[0m soup [38;5;241m=[39m [43mBeautifulSoup[49m[43m([49m[43mreq[49m[38;5;241;43m.[39;49m[43mtext[49m[43m,[49m[43m [49m[38;5;124;43m"[39;49m[38;5;124;43mlxml[39;49m[38;5;124;43m"[39;49m[43m)[49m
+[0;32m      8[0m news_links [38;5;241m=[39m soup[38;5;241m.[39mfind_all([38;5;124m"[39m[38;5;124mli[39m[38;5;124m"[39m,{[38;5;124m'[39m[38;5;124mdata-id[39m[38;5;124m'[39m:[38;5;124m'[39m[38;5;124mid-1[39m[38;5;124m'[39m})
+[0;32m      9[0m [38;5;66;03m# #looping through article link[39;00m
+
+File [1;32m~\AppData\Local\Programs\Python\Python310\lib\site-packages\bs4\__init__.py:250[0m, in [0;36mBeautifulSoup.__init__[1;34m(self, markup, features, builder, parse_only, from_encoding, exclude_encodings, element_classes, **kwargs)[0m
+[0;32m    248[0m     builder_class [38;5;241m=[39m builder_registry[38;5;241m.[39mlookup([38;5;241m*[39mfeatures)
+[0;32m    249[0m     [38;5;28;01mif[39;00m builder_class [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[1;32m--> 250[0m         [38;5;28;01mraise[39;00m FeatureNotFound(
+[0;32m    251[0m             [38;5;124m"[39m[38;5;124mCouldn[39m[38;5;124m'[39m[38;5;124mt find a tree builder with the features you [39m[38;5;124m"[39m
+[0;32m    252[0m             [38;5;124m"[39m[38;5;124mrequested: [39m[38;5;132;01m%s[39;00m[38;5;124m. Do you need to install a parser library?[39m[38;5;124m"[39m
+[0;32m    253[0m             [38;5;241m%[39m [38;5;124m"[39m[38;5;124m,[39m[38;5;124m"[39m[38;5;241m.[39mjoin(features))
+[0;32m    255[0m [38;5;66;03m# At this point either we have a TreeBuilder instance in[39;00m
+[0;32m    256[0m [38;5;66;03m# builder, or we have a builder_class that we can instantiate[39;00m
+[0;32m    257[0m [38;5;66;03m# with the remaining **kwargs.[39;00m
+[0;32m    258[0m [38;5;28;01mif[39;00m builder [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+
+[1;31mFeatureNotFound[0m: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+
