@@ -1,0 +1,3148 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Crawling Pada Berita &#8212; Dokumentasi PPW</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'crawl_detik_fix';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Crawling PTA" href="all_uts.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/github.png" class="logo__image only-light" alt="Dokumentasi PPW - Home"/>
+    <script>document.write(`<img src="_static/github.png" class="logo__image only-dark" alt="Dokumentasi PPW - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Home
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="all_uts.html">Crawling PTA</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Crawling Pada Berita</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcrawl_detik_fix.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/crawl_detik_fix.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crawling Pada Berita</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-berita">Crawling berita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-detiksport">Crawling DetikSport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-detikhealth">Crawling DetikHealth</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-kalimat">Ekstraksi kalimat</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-pada-seluruh-data">Ekstraksi pada seluruh data</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crawling-pada-berita">
+<h1>Crawling Pada Berita<a class="headerlink" href="#crawling-pada-berita" title="Permalink to this heading">#</a></h1>
+<p>Crawling adalah proses mengumpulkan data dari berbagai sumber di internet secara otomatis. Dalam konteks web, kegiatan ini seringkali merujuk pada web crawling, yaitu mengakses dan mengumpulkan informasi dari halaman-halaman web.
+Data yang akan di crawling kali ini berasal darilaman <a class="reference external" href="http://detik.com">detik.com</a>, dengan kategori detikSport dan detikHealth</p>
+<section id="crawling-berita">
+<h2>Crawling berita<a class="headerlink" href="#crawling-berita" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/PPW/
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;cd&#39;</span><span class="p">,</span> <span class="s1">&#39;/content/drive/MyDrive/PPW/&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;google.colab&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="crawling-detiksport">
+<h3>Crawling DetikSport<a class="headerlink" href="#crawling-detiksport" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">crawl_detiksport</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+  <span class="n">berita_list</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">halaman</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
+    <span class="c1">#mengambil data dari detik.com</span>
+    <span class="c1"># req = requests.get(url,header)</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+    <span class="c1"># soup = BeautifulSoup(req.text,&#39;lxml&#39;)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+    <span class="n">listberita</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;list media_rows list-berita&#39;</span><span class="p">)</span>
+    <span class="n">artikel</span> <span class="o">=</span> <span class="n">listberita</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">artikel</span><span class="p">:</span>
+      <span class="n">url2</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+      <span class="n">judul</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+      <span class="c1">#mengambil data dari setiap konten</span>
+      <span class="c1"># urlkonten = requests.get(url2,header)</span>
+      <span class="n">urlkonten</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url2</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+      <span class="n">soupkonten</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">urlkonten</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+      <span class="n">konten</span> <span class="o">=</span> <span class="n">soupkonten</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">konten</span><span class="p">:</span>
+        <span class="n">kategori</span> <span class="o">=</span> <span class="s1">&#39;detiksport&#39;</span>
+        <span class="n">isi</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">isi</span><span class="p">]</span>
+        <span class="n">fixkonten</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ADVERTISEMENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">berita_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">judul</span><span class="p">,</span><span class="n">fixkonten</span><span class="p">,</span> <span class="n">kategori</span><span class="p">])</span>
+  <span class="k">return</span> <span class="n">berita_list</span>
+
+<span class="c1"># urlnews = &#39;https://www.detik.com/search/searchall?query=terbaru&amp;siteid=21&amp;sortby=time&amp;page=2&#39;</span>
+<span class="c1"># get_news = crawl_detiksport(urlnews)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">):</span>
+  <span class="n">cr</span> <span class="o">=</span> <span class="n">crawl_detiksport</span><span class="p">(</span><span class="s1">&#39;https://www.detik.com/search/searchall?query=terbaru&amp;siteid=21&amp;sortby=time&amp;page=</span><span class="si">%d</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">i</span>)
+  <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">+</span><span class="n">cr</span>
+<span class="n">frame_detiksport</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span><span class="s1">&#39;Isi&#39;</span><span class="p">,</span><span class="s1">&#39;Kategori&#39;</span><span class="p">])</span>
+<span class="n">frame_detiksport</span>
+<span class="c1"># frame_berita.to_csv(&#39;crawl_detiksport.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-9655baff-b2f6-4a5e-bb47-29e3866c176f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Isi</th>
+      <th>Kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Pesan Alan Budikusuma: Bulutangkis Menjanjikan...</td>
+      <td>Legenda bulutangkis Indonesia Alan Budikusuma ...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Pembibitan Atlet Wing Chun Dapat Dukungan</td>
+      <td>Olahraga Wing Chun Indonesia terus berkembang....</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Diskon Eksklusif Bank Mega, Tawarkan Pengalama...</td>
+      <td>Sedari dulu golf bukanlah olahraga yang ecek-e...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Head to Head Leo/Daniel vs Reddy/Shetty: The B...</td>
+      <td>Leo Rolly Carnando/Daniel Marthin berhadapan d...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ranking BWF Pekan Ini: Jonatan Dekati Anthony ...</td>
+      <td>Tunggal putra Indonesia Jonatan Christie terus...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Gregoria Mariska Tunjung Tembus Ranking 9 Duni...</td>
+      <td>Tunggal putri Indonesia Gregoria Mariska Tunju...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>'McGregor Forever', Sebuah Penanda Kalau The N...</td>
+      <td>Netflix meluncurkan film dokumenter 'McGregor ...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Rekap Medali Indonesia di SEA Games 2023 Sore ...</td>
+      <td>Kontingen Tim Indonesia menambah koleksi medal...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Klasemen Medali SEA Games 2023: Sudah 79 Emas,...</td>
+      <td>Kontingen Tim Indonesia menembus 79 medali ema...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>SEA Games 2023: Angkat Besi dan Gulat Sumbang ...</td>
+      <td>Atlet angkat besi dan gulat Indonesia berjaya ...</td>
+      <td>detiksport</td>
+    </tr>
+  </tbody>
+</table>
+<p>63 rows × 3 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-9655baff-b2f6-4a5e-bb47-29e3866c176f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-9655baff-b2f6-4a5e-bb47-29e3866c176f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-9655baff-b2f6-4a5e-bb47-29e3866c176f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-dd62359c-e27b-4ef4-b027-0a1866140e6e">
+  <button class="colab-df-quickchart" onclick="quickchart('df-dd62359c-e27b-4ef4-b027-0a1866140e6e')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-dd62359c-e27b-4ef4-b027-0a1866140e6e button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+<section id="crawling-detikhealth">
+<h3>Crawling DetikHealth<a class="headerlink" href="#crawling-detikhealth" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">crawl_detikhealth</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+  <span class="n">berita_list</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">halaman</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">url</span>
+    <span class="c1">#mengambil data dari detik.com</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+    <span class="c1"># soup = BeautifulSoup(req.text,&#39;lxml&#39;)</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+    <span class="n">listberita</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;list media_rows list-berita&#39;</span><span class="p">)</span>
+    <span class="n">artikel</span> <span class="o">=</span> <span class="n">listberita</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">artikel</span><span class="p">:</span>
+      <span class="n">geturlberita</span><span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+      <span class="n">judul</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;h2&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+      <span class="c1"># mengambil data dari setiap konten</span>
+      <span class="n">urlkonten</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">geturlberita</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+      <span class="n">soupkonten</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">urlkonten</span><span class="p">,</span><span class="s1">&#39;lxml&#39;</span><span class="p">)</span>
+      <span class="n">konten</span> <span class="o">=</span> <span class="n">soupkonten</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span><span class="n">class_</span><span class="o">=</span><span class="s1">&#39;detail__body-text itp_bodycontent&#39;</span><span class="p">)</span>
+      <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">konten</span><span class="p">:</span>
+        <span class="n">kategori</span> <span class="o">=</span> <span class="s1">&#39;detikhealth&#39;</span>
+        <span class="n">isi</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">isi</span><span class="p">]</span>
+        <span class="n">fixkonten</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;ADVERTISEMENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;SCROLL TO RESUME CONTENT&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">berita_list</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">judul</span><span class="p">,</span><span class="n">fixkonten</span><span class="p">,</span> <span class="n">kategori</span><span class="p">])</span>
+  <span class="k">return</span> <span class="n">berita_list</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span>
+  <span class="n">cr</span> <span class="o">=</span> <span class="n">crawl_detikhealth</span><span class="p">(</span><span class="s1">&#39;https://www.detik.com/search/searchall?query=terbaru&amp;siteid=55&amp;sortby=time&amp;page=</span><span class="si">%d</span><span class="s1">&#39;</span><span class="o">%</span><span class="k">i</span>)
+  <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">+</span><span class="n">cr</span>
+<span class="n">frame_detikhealth</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">columns</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span><span class="s1">&#39;Isi&#39;</span><span class="p">,</span><span class="s1">&#39;Kategori&#39;</span><span class="p">])</span>
+<span class="n">frame_detikhealth</span>
+<span class="c1"># frame_berita.to_csv(&#39;crawl_detikhealth.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-03d879b3-b1e0-4f2a-ac4a-0acdcb1d30c7" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Isi</th>
+      <th>Kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Sederet Rumor Penyakit Putin, Sempat Disebut P...</td>
+      <td>Presiden Rusia, Vladimir Putin, telah berkali-...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>7 Rahasia untuk Perlambat Penuaan, Bisa Bikin ...</td>
+      <td>Setiap orang akan mengalami penuaan di kehidup...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>RSCM: Pasien MPox Meninggal karena Ada Riwayat...</td>
+      <td>Indonesia kini mencatat total 57 kasus cacar m...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Mantan Presiden AS Donald Trump Pamer Surat Do...</td>
+      <td>Dokter Donald Trump baru-baru ini menulis cata...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Sebaran Terbaru Kasus Mpox di RI: Sudah Sampai...</td>
+      <td>Kasus Mpox terus merangkak naik, DKI Jakarta k...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Total Sudah 51 Kasus Mpox di RI, Semuanya Tert...</td>
+      <td>Kasus Mpox di Indonesia terus bertambah, berda...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Etawalin Dukung Pembasmian Sindikat Pemalsu Ob...</td>
+      <td>Kepolisian Daerah Istimewa Yogyakarta (DIY) pa...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Waspada! Ini Kondisi yang Diam-diam Picu Penya...</td>
+      <td>Aterosklerosis adalah pengerasan pada pembuluh...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Terbaru! WHO Tetapkan Kesepian Jadi Ancaman Ke...</td>
+      <td>Organisasi Kesehatan Dunia (WHO) menetapkan ke...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Kabar Terbaru Luhut Pasca Diperbolehkan Pulang...</td>
+      <td>Menkomarinves Luhut Binsar Pandjaitan menyampa...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Founder dan Eks Drummer Kool &amp; The Gang Wafat ...</td>
+      <td>George 'Funky' Brown, salah satu pendiri dan d...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Kejam! Israel Geledah dan Interogasi Dokter-Pa...</td>
+      <td>Kantor media pemerintah Gaza telah memperingat...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Dokter Gambarkan Situasi Mencekam RS Al Shifa ...</td>
+      <td>Militer Israel dilaporkan telah menerobos mema...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Waduh, Ilmuwan Sebut Wabah Jamur 'The Last of ...</td>
+      <td>Para ilmuwan di Barcelona memperingatkan wabah...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Viral Siskaeee Tidur dengan 216 Pria, Pakar Sa...</td>
+      <td>Pakar epidemiologi Dicky Budiman ikut menyorot...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Kasus Cacar Monyet 'Mpox' di RI Jadi 44 Pasien...</td>
+      <td>Kementerian Kesehatan (Kemenkes) RI melaporkan...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Alasan Kemenkes Perketat Aturan Rokok, Batasi ...</td>
+      <td>Kementerian Kesehatan RI memperketat regulasi ...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Terbukti Lewat Riset! Pria 'Good Looking' Cend...</td>
+      <td>Menurut sebuah penelitian terbaru, pria tampan...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Survei Sebut 10 Profesi Ini Lebih Rentan Selin...</td>
+      <td>Sebuah survei terbaru baru-baru ini mengungkap...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Populasi Jepang Terancam, Makin Banyak Wargany...</td>
+      <td>Sebuah survei di Jepang mengungkapkan kini sem...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>WHO Rilis Data Baru, Kasus TBC di Indonesia Ma...</td>
+      <td>Organisasi Kesehatan Dunia (WHO) merilis Globa...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Nggak Perlu Datang Subuh! Antrean Rawat Jalan ...</td>
+      <td>BPJS Kesehatan menerima puluhan delegasi Joint...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Respons Taruna Ikrar usai Gelar Profesornya Di...</td>
+      <td>Pencabutan gelar profesor Taruna Ikrar belakan...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Kasus Mpox di RI Kini Tembus 38 Pasien! Sudah ...</td>
+      <td>Kasus kumulatif Mpox sejak kembali teridentifi...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Alasan Korsel Ketar-ketir Wabah Kutu Busuk Mun...</td>
+      <td>Ada 17 orang yang sejauh ini dilaporkan terken...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Kasus Mpox Ngegas di RI, Berpotensi Jadi Wabah...</td>
+      <td>Kasus cacar monyet atau yang belakangan resmi ...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Kasus Cacar Monyet 'Mpox' Ngegas di RI, Perluk...</td>
+      <td>Indonesia mencatat peningkatan kasus infeksi c...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Hasil Autopsi Awal Matthew Perry: Tak Ada Fent...</td>
+      <td>Aktor legendaris Matthew Perry meninggal dunia...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>33 Kasus Cacar Monyet 'Mpox' di RI Tertular Le...</td>
+      <td>Dalam sebulan terakhir, pasien cacar monyet at...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Presiden Jokowi Pimpin Pembangunan Mayapada Ho...</td>
+      <td>Mayapada Healthcare Group (PT Sejahteraraya An...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Dokter Jantung RSRP: Waspada Sakit Jantung di ...</td>
+      <td>Penyakit jantung kerap dikaitkan dengan penyak...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Rodenstock Colormatic 3: Lensa Kacamata Revolu...</td>
+      <td>Rodenstock Colormatic 3 adalah inovasi terbaru...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Terbukti Lewat Riset! Doyan Minum Kopi Bisa Bi...</td>
+      <td>Siapa di sini terbiasa harus meminum 'booster'...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Kocak! Ogah Bayar Makanan, Pria Pura-pura Kena...</td>
+      <td>Ada-ada saja cara yang dilakukan agar tidak me...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>More Than a Decade, Perayaan dan Peluncuran Pr...</td>
+      <td>Penggunaan skincare di Indonesia meningkat taj...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Nggak Harus 10 Ribu Langkah Sehari, Ini Temuan...</td>
+      <td>Sering mendengar bahwa jalan kaki 10 ribu lang...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Hari Dokter Nasional, Perayaan untuk Pahlawan ...</td>
+      <td>Sebagaimana diketahui, dokter memiliki peran p...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Polisi Temukan Obat Penyakit Paru di Kediaman ...</td>
+      <td>Pemeran Chandler Bing di serial Friends, Matth...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>PT Buana Varia Komputama Kenalkan Sejumlah Ino...</td>
+      <td>PT Buana Varia Komputama yang merupakan perusa...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Polisi Temukan Antidepresan dan Obat Paru di K...</td>
+      <td>Pemeran Chandler Bing di Friends, Matthew Perr...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>WHO soal Situasi di Gaza: Kamar Mayat Penuh, B...</td>
+      <td>Serangan Israel ke Gaza, Palestina, masih teru...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Kondisi Terkini Luhut Panjaitan yang Dirawat d...</td>
+      <td>Kondisi Menko Kemaritiman dan Investasi (Menko...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>KARADA, Terapi Pijat Asli Jepang untuk Redakan...</td>
+      <td>Sejak pertama kali didirikan pada tahun 2001 d...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Vladimir Putin Lagi-lagi Jadi Sorotan, Kali In...</td>
+      <td>Kondisi kesehatan Presiden Rusia Vladimir Puti...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Kemenkes Sebut Kasus Cacar Monyet Tak Cuma di ...</td>
+      <td>Kasus cacar monyet atau Mpox di Indonesia masi...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Atasi Ambeien dengan 3 Rangkaian Produk Xi Yao...</td>
+      <td>Xi Yaopin Zhi adalah Traditional Chinese Medic...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>HUT Ke-2, RS Mandaya Puri Sudah Layani 1.500 P...</td>
+      <td>Mandaya Royal Hospital Puri baru saja merayaka...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Ada 7 Kasus di DKI, Kemenkes Perketat Pemantau...</td>
+      <td>Telah ditemukan tujuh kasus cacar monyet atau ...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Update Kasus Cacar Monyet di Jakarta, Ini Sede...</td>
+      <td>Kabid P2P Dinkes DKI Jakarta dr Dwi Oktavia, M...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Fakta-fakta Kasus Baru Cacar Monyet 'Mpox' di ...</td>
+      <td>Kasus cacar monyet atau monkeypox di Indonesia...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>2 Kasus Baru Mpox Ditemukan di DKI! Ini Urutan...</td>
+      <td>Pasien cacar monyet atau Mpox terus bertambah ...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>6 Wilayah Blue Zone yang Warganya Berumur Panj...</td>
+      <td>Blue Zone atau Zona Biru adalah istilah yang d...</td>
+      <td>detikhealth</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-03d879b3-b1e0-4f2a-ac4a-0acdcb1d30c7')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-03d879b3-b1e0-4f2a-ac4a-0acdcb1d30c7 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-03d879b3-b1e0-4f2a-ac4a-0acdcb1d30c7');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-80f7240b-dfe2-473f-b0a5-77a7724cc06a">
+  <button class="colab-df-quickchart" onclick="quickchart('df-80f7240b-dfe2-473f-b0a5-77a7724cc06a')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-80f7240b-dfe2-473f-b0a5-77a7724cc06a button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Merge detikSport dan detikHealth menjadi satu dataset</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menggabungkan DataFrames secara berurutan (baris-wise)</span>
+<span class="n">frame_berita</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">frame_detiksport</span><span class="p">,</span> <span class="n">frame_detikhealth</span><span class="p">])</span>
+<span class="n">frame_berita</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;crawling_detiksporthealth.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="ekstraksi-kalimat">
+<h2>Ekstraksi kalimat<a class="headerlink" href="#ekstraksi-kalimat" title="Permalink to this heading">#</a></h2>
+<p>Setelah melakukan crawling pada berita, maka akan dilakukan ekstraksi kalimat pada isi berita, dengan tujuan mencari kalimat penting pada suatu berita</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">termFreq</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;crawling_detiksporthealth.csv&quot;</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">termFreq</span><span class="p">[</span><span class="s1">&#39;Isi&#39;</span><span class="p">]</span>
+<span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0      Legenda bulutangkis Indonesia Alan Budikusuma ...
+1      Olahraga Wing Chun Indonesia terus berkembang....
+2      Sedari dulu golf bukanlah olahraga yang ecek-e...
+3      Leo Rolly Carnando/Daniel Marthin berhadapan d...
+4      Tunggal putra Indonesia Jonatan Christie terus...
+                             ...                        
+110    Telah ditemukan tujuh kasus cacar monyet atau ...
+111    Kabid P2P Dinkes DKI Jakarta dr Dwi Oktavia, M...
+112    Kasus cacar monyet atau monkeypox di Indonesia...
+113    Pasien cacar monyet atau Mpox terus bertambah ...
+114    Blue Zone atau Zona Biru adalah istilah yang d...
+Name: Isi, Length: 115, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<p>Import library yang diperlukan</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">spacy</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_similarity</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+
+<span class="c1"># Hitung kesamaan kosinus antara kalimat</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi spaCy untuk pemrosesan teks</span>
+<span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;en_core_web_sm&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ambil salah satu kalimat isi dari data, sebagai contoh</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">termFreq</span><span class="p">[</span><span class="s1">&#39;Isi&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ekstrak kalimat dari teks</span>
+<span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">sent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Menghitung TF-IDF kalimat</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hitung TF-IDF dari kalimat</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+<span class="n">tfidf_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
+<span class="n">tfidf_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-1395508a-9fa2-4e9f-8657-59f78696e44f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>10</th>
+      <th>12</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2022</th>
+      <th>2023</th>
+      <th>22</th>
+      <th>330</th>
+      <th>acara</th>
+      <th>adalah</th>
+      <th>...</th>
+      <th>vtaa</th>
+      <th>wakil</th>
+      <th>wali</th>
+      <th>walisongo</th>
+      <th>wing</th>
+      <th>with</th>
+      <th>yang</th>
+      <th>yaqut</th>
+      <th>yuwono</th>
+      <th>zhong</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.247212</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.206905</td>
+      <td>0.206905</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.143143</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.206905</td>
+      <td>0.172434</td>
+      <td>0.000000</td>
+      <td>0.113496</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.170082</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.204886</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.149801</td>
+      <td>0.149801</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.149801</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.187265</td>
+      <td>0.149801</td>
+      <td>0.246514</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.41941</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.080932</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.075840</td>
+      <td>0.000000</td>
+      <td>0.199670</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.182002</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.174095</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.209719</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.113077</td>
+      <td>0.000000</td>
+      <td>0.148854</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.308982</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.312182</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.147957</td>
+      <td>0.213863</td>
+      <td>0.213863</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.089116</td>
+      <td>0.000000</td>
+      <td>0.234624</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.151276</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.17069</td>
+      <td>0.17069</td>
+      <td>0.000000</td>
+      <td>0.071126</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.17069</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.172290</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.220711</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.207545</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.200615</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.091839</td>
+      <td>0.000000</td>
+      <td>0.241793</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.242654</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.133105</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.186986</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.205025</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.196176</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.121123</td>
+      <td>0.000000</td>
+      <td>0.159445</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>25 rows × 259 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1395508a-9fa2-4e9f-8657-59f78696e44f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-1395508a-9fa2-4e9f-8657-59f78696e44f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-1395508a-9fa2-4e9f-8657-59f78696e44f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-209a1860-6971-4e5a-902c-23973f770be0">
+  <button class="colab-df-quickchart" onclick="quickchart('df-209a1860-6971-4e5a-902c-23973f770be0')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-209a1860-6971-4e5a-902c-23973f770be0 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Mencari cosine similarity</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cosine_sim</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">)</span> <span class="c1">#menjadikan tfidf ke cosine</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Membuat Graph</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graf_result</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#untuk menyimpan hasil graf akhir</span>
+<span class="n">treshold</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#inisialisasi treshold</span>
+
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1"># Buat grafik dari kesamaan kosinus</span>
+<span class="k">for</span> <span class="n">i_hasil</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cosine_sim</span><span class="p">)):</span> <span class="c1">#inisialisasi indeks awal perulangan dari setiap hasil cosine</span>
+  <span class="n">arr_cosim</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span> <span class="n">j_hasil</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i_hasil</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cosine_sim</span><span class="p">)):</span> <span class="c1">#inisialisasi indeks kedua perulangan dari setiap hasil cosine</span>
+    <span class="k">if</span> <span class="n">cosine_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">treshold</span><span class="p">:</span> <span class="c1">#cek apakah cosim dari kalimat 1 dan 2 lebih dari treshold?</span>
+      <span class="c1"># print(f&#39;Similairty kalimat ke - {i_hasil} : {j_hasil} = {cos_sim[i_hasil][j_hasil]}&#39;)</span>
+
+      <span class="n">arr_cosim</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i_hasil</span><span class="p">,</span><span class="n">j_hasil</span><span class="p">,</span><span class="n">cosine_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">]])</span> <span class="c1">#menyimpan nilai indeks awal, indeks awal+1, hasil cosim</span>
+      <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">i_hasil</span><span class="p">,</span><span class="n">j_hasil</span><span class="p">,</span><span class="n">weight</span><span class="o">=</span><span class="n">cosine_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">])</span> <span class="c1">#menyimpan nilai indeks awal, indeks awal+1, bobot=hasil cosim</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Mencari closeness centrality</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">graf_result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">closeness_centrality</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">graf_result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Temukan kalimat paling penting berdasarkan Closeness Centrality</span>
+<span class="n">most_important_sentence_idx</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">closeness_centrality</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<span class="n">most_important_sentence</span> <span class="o">=</span> <span class="n">sentences</span><span class="p">[</span><span class="n">most_important_sentence_idx</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Print hasil</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Cetak hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kalimat-kalimat dalam teks:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentences</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">sentence</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kesamaan Kosinus Antara Kalimat:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cosine_sim</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Closeness Centrality:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Kalimat Paling Penting:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">most_important_sentence</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kalimat-kalimat dalam teks:
+1. Olahraga Wing Chun Indonesia terus berkembang.
+2. Pembibitannya pun mendapatkan dukungan di Tanah Air.
+3. Produsen es krim terpopuler di Indonesia, Aice, berkolaborasi bersama Federasi Wing Chun Indonesia dalam Kejuaraan Nasional Wing Chun Indonesia 2023.Kejuaraan ini sukses diselenggarakan pada 10-12 November yang bertempat di UIN Walisongo Semarang.
+4. Tahun 2023 menjadi tahun kedua bagi Aice Group turut mendukung terlaksananya Turnamen Wing Chun Indonesia sekaligus mendukung pembibitan talenta-talenta muda Indonesia pada olahraga Wing Chun.
+
+
+5. SCROLL TO CONTINUE WITH CONTENT
+Olahraga Wing Chun di Indonesia berhasil menunjukkan potensi yang sangat baik, terutama setelah berhasil menjadi juara umum tiga kali berturut-turut pada Kejuaraan Dunia Wing Chun yang diselenggarakan oleh Federasi Wing Chun Dunia, Ving Tsun Athletic Association (VTAA) pada tahun 2016, 2017, serta yang terbaru pada
+6. Oktober tahun 2022 lalu di Hong Kong.
+7. Prestasi ini tentunya perlu untuk dipertahankan bahkan ditingkatkan, dan hal ini membutuhkan perhatian tidak hanya oleh para atlet dan pemerintah, namun juga berbagai pihak termasuk swasta untuk turut mendukung dan terlibat dalam pertumbuhan olahraga Wing Chun di Indonesia.
+8. Sylvana Zhong, selaku Senior Brand Manager Aice Group menyebutkan sangat memahami bahwa pertumbuhan olahraga Indonesia, terutama Wing Chun membutuhkan perhatian tidak hanya dari pihak yang terlibat langsung, namun juga pihak swasta yang bisa turut serta untuk mendukung perkembangan serta pembibitan talenta muda.
+9. &quot;Tahun 2023 menjadi tahun kedua Aice turut terlibat dalam memberikan dukungan terhadap pelaksanaan olahraga Wing Chun di Indonesia, terutama dalam pelaksanaan Kejuaraan Nasional Wing Chun.
+10. Aice memahami bahwa Wing Chun menjadi salah satu bentuk seni bela diri yang mengedepankan teknik, konsentrasi, dan keseimbangan,&quot; kata Sylvana.
+11. &quot;Hal ini sejalan dengan filosofi Aice yang mengutamakan kualitas, inovasi, dan dedikasi di setiap produk yang dihadirkan.
+12. Aice juga memiliki komitmen untuk mendukung gaya hidup sehat bagi seluruh masyarakat Indonesia.
+13. Karena itulah, kami mendukung penuh pertumbuhan olahraga di Indonesia, termasuk olahraga seni bela diri
+14. Wing Chun&quot; ujar Sylvana.
+15. Kejuaran Nasional Wing Chun tahun 2023 sukses digelar dengan diikuti sebanyak lebih dari 330 peserta yang terdiri dari atlet dan official yang berasal dari 22 provinsi di Indonesia.
+16. Provinsi DKI Jakarta berhasil membawa gelar sebagai juara umum dan membawa pulang piala ketua umum, dengan perolehan tujuh emas, lima perak, dan lima perunggu.
+17. Acara ini juga dihadiri oleh Wali Kota Semarang, Hevearita Gunaryanti Rahayu, Sekretaris Deputi Bidang Pengembangan Pemuda, Edi Nurinda Susila, Wakil Ketua Umum Federasi Wing Chun Indonesia, King Yuwono, Kepala Bidang Keolahragaan Provinsi Jawa Tengah, serta beberapa tamu undangan lain.
+18. Yaqut Cholil Qoumas, selaku Ketua Umum Federasi Wing Chun Indonesia sekaligus Menteri Agama RI turut hadir dalam membuka acara Kejuaran Nasional Wing Chun 2023 di Semarang.
+19. Ia menekankan pentingnya dedikasi dan semangat yang ditunjukkan oleh para atlet, yang tidak hanya menjadi bagian dari kejuaraan ini, tetapi juga telah berhasil membawa prestasi luar biasa bagi tim nasional Wing Chun Indonesia.
+20. &quot;Keberhasilan para atlet dalam mempertahankan gelar &#39;Juara Umum&#39; di kejuaraan internasional adalah bukti nyata dari dedikasi, kerja keras, dan semangat juang yang luar biasa.
+21. Mereka tidak hanya mengangkat nama bangsa, tetapi juga menjadi inspirasi bagi generasi mendatang untuk mengejar impian mereka dalam dunia seni bela diri,&quot; ujar Yaqut.
+22. Selain memberikan apresiasi kepada para atlet, Yaqut Cholil Qoumas juga memberikan apresiasi atas konsistensi dalam mendukung perkembangan
+23. Wing Chun Indonesia, terutama dalam mendukung pembibitan atlet dan bakat muda.
+24. &quot;Kami sangat menghargai peran Aice Group yang telah secara konsisten menunjukkan dukungan mereka terhadap perkembangan olahraga Wing Chun di Indonesia.
+25. Dukungan mereka dalam pembibitan atlet dan talenta muda telah memberikan sumbangan besar dalam memajukan seni bela diri di Indonesia&quot; tambahnya.
+
+Kesamaan Kosinus Antara Kalimat:
+[[1.         0.         0.14408471 0.1966428  0.13648588 0.
+  0.09692927 0.09083063 0.17743185 0.05590799 0.         0.03100355
+  0.1642049  0.15434997 0.06433027 0.         0.05134375 0.126218
+  0.06629599 0.         0.         0.         0.14161359 0.14506455
+  0.02718816]
+ [0.         1.         0.03556839 0.         0.01287586 0.03604968
+  0.01669398 0.         0.0795173  0.         0.02420797 0.
+  0.02872755 0.         0.0183822  0.         0.         0.02140542
+  0.         0.02085689 0.         0.         0.         0.09184997
+  0.0906474 ]
+ [0.14408471 0.03556839 1.         0.19377003 0.25166514 0.03579721
+  0.11430674 0.07944868 0.26717249 0.07465479 0.10647203 0.05505754
+  0.06166858 0.10766164 0.17393692 0.         0.10077195 0.24423567
+  0.16827466 0.09898491 0.0144509  0.01584499 0.14364886 0.13359952
+  0.0886495 ]
+ [0.1966428  0.         0.19377003 1.         0.23874469 0.0987024
+  0.12012911 0.26403025 0.39574787 0.09669507 0.02313939 0.15703694
+  0.14254771 0.12792323 0.12881054 0.         0.04255302 0.20775554
+  0.10764826 0.         0.05550567 0.04673762 0.33160083 0.16660077
+  0.19192554]
+ [0.13648588 0.01287586 0.25166514 0.23874469 1.         0.04302994
+  0.07898305 0.17068943 0.21159327 0.09614584 0.0848705  0.00782849
+  0.05178886 0.1169215  0.11827444 0.08826856 0.087784   0.14552829
+  0.19004268 0.09869441 0.06925064 0.         0.12367046 0.17761657
+  0.01572854]
+ [0.         0.03604968 0.03579721 0.0987024  0.04302994 1.
+  0.01680138 0.         0.12279962 0.         0.0243637  0.
+  0.02891237 0.         0.06143161 0.         0.         0.02154313
+  0.         0.02099107 0.         0.         0.         0.02514498
+  0.02481576]
+ [0.09692927 0.01669398 0.11430674 0.12012911 0.07898305 0.01680138
+  1.         0.36152954 0.14985699 0.06587888 0.15598806 0.12775106
+  0.18450168 0.05053086 0.08263541 0.07114566 0.07922498 0.0861979
+  0.26143464 0.11006072 0.12994578 0.0975456  0.22471319 0.05913522
+  0.12502423]
+ [0.09083063 0.         0.07944868 0.26403025 0.17068943 0.
+  0.36152954 1.         0.14400766 0.17301469 0.07882469 0.10674503
+  0.1125677  0.13583524 0.13104055 0.         0.06767326 0.09338892
+  0.15002612 0.05095558 0.08573822 0.06466003 0.21734054 0.19701082
+  0.09986283]
+ [0.17743185 0.0795173  0.26717249 0.39574787 0.21159327 0.12279962
+  0.14985699 0.14400766 1.         0.09897617 0.03830336 0.04066097
+  0.08699794 0.13094102 0.16011038 0.         0.03669495 0.23405513
+  0.1238033  0.07856742 0.05972284 0.12166594 0.23790131 0.22429601
+  0.20000019]
+ [0.05590799 0.         0.07465479 0.09669507 0.09614584 0.
+  0.06587888 0.17301469 0.09897617 1.         0.09453114 0.02966611
+  0.15019523 0.20253054 0.07254103 0.03313467 0.01608547 0.04693728
+  0.09991699 0.0396264  0.13080793 0.         0.08280685 0.07748687
+  0.15233729]
+ [0.         0.02420797 0.10647203 0.02313939 0.0848705  0.0243637
+  0.15598806 0.07882469 0.03830336 0.09453114 1.         0.03078956
+  0.01941514 0.         0.14212868 0.07147325 0.02300921 0.01446657
+  0.16337859 0.12013564 0.         0.         0.03989651 0.09350963
+  0.04097452]
+ [0.03100355 0.         0.05505754 0.15703694 0.00782849 0.
+  0.12775106 0.10674503 0.04066097 0.02966611 0.03078956 1.
+  0.05829997 0.         0.01117633 0.         0.02977415 0.01301444
+  0.07824322 0.         0.11218842 0.06218966 0.08212147 0.04696725
+  0.01499147]
+ [0.1642049  0.02872755 0.06166858 0.14254771 0.05178886 0.02891237
+  0.18450168 0.1125677  0.08699794 0.15019523 0.01941514 0.05829997
+  1.         0.         0.02616167 0.         0.00911372 0.03046434
+  0.0117678  0.01672753 0.12847303 0.03176966 0.0839037  0.17679813
+  0.19386767]
+ [0.15434997 0.         0.10766164 0.12792323 0.1169215  0.
+  0.05053086 0.13583524 0.13094102 0.20253054 0.         0.
+  0.         1.         0.05564091 0.         0.04440853 0.12958376
+  0.05734112 0.         0.13659051 0.         0.12248525 0.0756246
+  0.        ]
+ [0.06433027 0.0183822  0.17393692 0.12881054 0.11827444 0.06143161
+  0.08263541 0.13104055 0.16011038 0.07254103 0.14212868 0.01117633
+  0.02616167 0.05564091 1.         0.08243223 0.04219758 0.14930115
+  0.21303242 0.16286858 0.         0.02032878 0.11894852 0.08175034
+  0.06382794]
+ [0.         0.         0.         0.         0.08826856 0.
+  0.07114566 0.         0.         0.03313467 0.07147325 0.
+  0.         0.         0.08243223 1.         0.0781024  0.0811605
+  0.12618157 0.14738188 0.         0.         0.05748496 0.
+  0.03502756]
+ [0.05134375 0.         0.10077195 0.04255302 0.087784   0.
+  0.07922498 0.06767326 0.03669495 0.01608547 0.02300921 0.02977415
+  0.00911372 0.04440853 0.04219758 0.0781024  1.         0.16868281
+  0.07189665 0.01982408 0.01479744 0.01622496 0.04074411 0.02515614
+  0.00782239]
+ [0.126218   0.02140542 0.24423567 0.20775554 0.14552829 0.02154313
+  0.0861979  0.09338892 0.23405513 0.04693728 0.01446657 0.01301444
+  0.03046434 0.12958376 0.14930115 0.0811605  0.16868281 1.
+  0.07316048 0.05957014 0.05490564 0.15977119 0.13543868 0.07677166
+  0.06913968]
+ [0.06629599 0.         0.16827466 0.10764826 0.19004268 0.
+  0.26143464 0.15002612 0.1238033  0.09991699 0.16337859 0.07824322
+  0.0117678  0.05734112 0.21303242 0.12618157 0.07189665 0.07316048
+  1.         0.31361621 0.16552968 0.07286402 0.12258319 0.11260802
+  0.09376667]
+ [0.         0.02085689 0.09898491 0.         0.09869441 0.02099107
+  0.11006072 0.05095558 0.07856742 0.0396264  0.12013564 0.
+  0.01672753 0.         0.16286858 0.14738188 0.01982408 0.05957014
+  0.31361621 1.         0.01694769 0.07573909 0.11141344 0.03577081
+  0.10319051]
+ [0.         0.         0.0144509  0.05550567 0.06925064 0.
+  0.12994578 0.08573822 0.05972284 0.13080793 0.         0.11218842
+  0.12847303 0.13659051 0.         0.         0.01479744 0.05490564
+  0.16552968 0.01694769 1.         0.07817676 0.03288121 0.08756799
+  0.23676243]
+ [0.         0.         0.01584499 0.04673762 0.         0.
+  0.0975456  0.06466003 0.12166594 0.         0.         0.06218966
+  0.03176966 0.         0.02032878 0.         0.01622496 0.15977119
+  0.07286402 0.07573909 0.07817676 1.         0.12555491 0.04800786
+  0.16596382]
+ [0.14161359 0.         0.14364886 0.33160083 0.12367046 0.
+  0.22471319 0.21734054 0.23790131 0.08280685 0.03989651 0.08212147
+  0.0839037  0.12248525 0.11894852 0.05748496 0.04074411 0.13543868
+  0.12258319 0.11141344 0.03288121 0.12555491 1.         0.06938434
+  0.34302665]
+ [0.14506455 0.09184997 0.13359952 0.16660077 0.17761657 0.02514498
+  0.05913522 0.19701082 0.22429601 0.07748687 0.09350963 0.04696725
+  0.17679813 0.0756246  0.08175034 0.         0.02515614 0.07677166
+  0.11260802 0.03577081 0.08756799 0.04800786 0.06938434 1.
+  0.18477069]
+ [0.02718816 0.0906474  0.0886495  0.19192554 0.01572854 0.02481576
+  0.12502423 0.09986283 0.20000019 0.15233729 0.04097452 0.01499147
+  0.19386767 0.         0.06382794 0.03502756 0.00782239 0.06913968
+  0.09376667 0.10319051 0.23676243 0.16596382 0.34302665 0.18477069
+  1.        ]]
+
+Closeness Centrality:
+{2: 0.0, 4: 0.13333333333333333, 8: 0.2, 17: 0.21333333333333335, 3: 0.0, 7: 0.13333333333333333, 22: 0.30000000000000004, 6: 0.0, 18: 0.13333333333333333, 23: 0.15238095238095237, 24: 0.3282051282051282, 9: 0.0, 13: 0.06666666666666667, 14: 0.0, 19: 0.12, 20: 0.0}
+
+Kalimat Paling Penting:
+Dukungan mereka dalam pembibitan atlet dan talenta muda telah memberikan sumbangan besar dalam memajukan seni bela diri di Indonesia&quot; tambahnya.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Visual grafik dengan matplotlib</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Visualisasikan grafik</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()}</span>
+<span class="n">edge_labels</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">get_edge_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="n">labels</span><span class="p">,</span> <span class="n">node_size</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">font_color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edge_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Grafik Kesamaan Kosinus&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/759bf56d02bdb61d9d85fcf55a5d6ade5ec49cfad60a9e851a2583b254a0e21f.png" src="_images/759bf56d02bdb61d9d85fcf55a5d6ade5ec49cfad60a9e851a2583b254a0e21f.png" />
+</div>
+</div>
+<p>Membuat ringkasan berita dengan menggabungkan 3 kalimat paling penting</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_dict</span> <span class="o">=</span> <span class="n">closeness_centrality</span>
+<span class="n">imp_stc</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+  <span class="n">get_stc</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">my_dict</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+  <span class="n">imp_stc</span><span class="o">=</span><span class="n">imp_stc</span><span class="o">+</span><span class="n">sentences</span><span class="p">[</span><span class="n">get_stc</span><span class="p">]</span>
+  <span class="n">my_dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">get_stc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imp_stc</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Dukungan mereka dalam pembibitan atlet dan talenta muda telah memberikan sumbangan besar dalam memajukan seni bela diri di Indonesia&quot; tambahnya.Wing Chun Indonesia, terutama dalam mendukung pembibitan atlet dan bakat muda.Yaqut Cholil Qoumas, selaku Ketua Umum Federasi Wing Chun Indonesia sekaligus Menteri Agama RI turut hadir dalam membuka acara Kejuaran Nasional Wing Chun 2023 di Semarang.
+</pre></div>
+</div>
+</div>
+</div>
+<section id="ekstraksi-pada-seluruh-data">
+<h3>Ekstraksi pada seluruh data<a class="headerlink" href="#ekstraksi-pada-seluruh-data" title="Permalink to this heading">#</a></h3>
+<p>Setelah melihat proses yang berjalan untuk mendapatkan kalimat penting dan ringkasan dengan contoh pada satu berita, sekarang kita akan mengekstraksi seluruh berita pada data hasil crawling untuk mencari ringkasan berdasarkan 3 kalimat paling penting</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">read</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;crawl_detiksport.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">import</span> <span class="nn">spacy</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">cosine_similarity</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Inisialisasi spaCy untuk pemrosesan teks</span>
+<span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;en_core_web_sm&#39;</span><span class="p">)</span>
+<span class="n">kal_imp</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">imp_sc_result</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">termFreq</span><span class="p">[</span><span class="s1">&#39;Isi&#39;</span><span class="p">])):</span>
+  <span class="n">text</span> <span class="o">=</span> <span class="n">termFreq</span><span class="p">[</span><span class="s1">&#39;Isi&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+  <span class="c1"># Ekstrak kalimat dari teks</span>
+  <span class="n">doc</span> <span class="o">=</span> <span class="n">nlp</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+  <span class="n">sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">sent</span><span class="o">.</span><span class="n">text</span> <span class="k">for</span> <span class="n">sent</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">sents</span><span class="p">]</span>
+
+  <span class="c1"># Hitung TF-IDF dari kalimat</span>
+  <span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+  <span class="n">tfidf_matrix</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">sentences</span><span class="p">)</span>
+  <span class="n">tfidf_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
+
+
+  <span class="c1"># Hitung kesamaan kosinus antara kalimat</span>
+  <span class="n">cos_sim_result</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#untuk menyimpan hasil cosine sim akhir</span>
+  <span class="n">graf_result</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#untuk menyimpan hasil graf akhir</span>
+  <span class="n">treshold</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#inisialisasi treshold</span>
+
+
+  <span class="n">cos_sim_now</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="n">graf_now</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+  <span class="n">cos_sim</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">tfidf_matrix</span><span class="p">)</span> <span class="c1">#menjadikan tfidf ke cosine</span>
+
+  <span class="c1"># cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)</span>
+
+  <span class="c1"># Buat grafik dari kesamaan kosinus</span>
+  <span class="k">for</span> <span class="n">i_hasil</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cos_sim</span><span class="p">)):</span> <span class="c1">#inisialisasi indeks awal perulangan dari setiap hasil cosine</span>
+    <span class="n">arr_cosim</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">j_hasil</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i_hasil</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">cos_sim</span><span class="p">)):</span> <span class="c1">#inisialisasi indeks kedua perulangan dari setiap hasil cosine</span>
+      <span class="k">if</span> <span class="n">cos_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">treshold</span><span class="p">:</span> <span class="c1">#cek apakah cosim dari kalimat 1 dan 2 lebih dari treshold?</span>
+        <span class="c1"># print(f&#39;Similairty kalimat ke - {i_hasil} : {j_hasil} = {cos_sim[i_hasil][j_hasil]}&#39;)</span>
+
+        <span class="n">arr_cosim</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">i_hasil</span><span class="p">,</span><span class="n">j_hasil</span><span class="p">,</span><span class="n">cos_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">]])</span> <span class="c1">#menyimpan nilai indeks awal, indeks awal+1, hasil cosim</span>
+        <span class="n">graf_now</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">i_hasil</span><span class="p">,</span><span class="n">j_hasil</span><span class="p">,</span><span class="n">weight</span><span class="o">=</span><span class="n">cos_sim</span><span class="p">[</span><span class="n">i_hasil</span><span class="p">][</span><span class="n">j_hasil</span><span class="p">])</span> <span class="c1">#menyimpan nilai indeks awal, indeks awal+1, bobot=hasil cosim</span>
+
+    <span class="n">cos_sim_now</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">arr_cosim</span><span class="p">)</span>
+    <span class="c1"># graf_now.append(graf_current)</span>
+  <span class="n">cos_sim_result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cos_sim_now</span><span class="p">)</span>
+  <span class="n">graf_result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">graf_now</span><span class="p">)</span>
+  <span class="n">closeness_centrality</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">closeness_centrality</span><span class="p">(</span><span class="n">graf_result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+  <span class="c1"># Hitung Closeness Centrality</span>
+  <span class="c1"># closeness_centrality = nx.closeness_centrality(G)</span>
+
+  <span class="c1"># Temukan kalimat paling penting berdasarkan Closeness Centrality</span>
+
+  <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">imp_stc</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+    <span class="n">most_important_sentence_idx</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">closeness_centrality</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">closeness_centrality</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+    <span class="n">most_important_sentence</span> <span class="o">=</span> <span class="n">sentences</span><span class="p">[</span><span class="n">most_important_sentence_idx</span><span class="p">]</span>
+    <span class="n">my_dict</span> <span class="o">=</span> <span class="n">closeness_centrality</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">:</span>
+      <span class="n">get_stc</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">my_dict</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+      <span class="n">imp_stc</span><span class="o">=</span><span class="n">imp_stc</span><span class="o">+</span><span class="n">sentences</span><span class="p">[</span><span class="n">get_stc</span><span class="p">]</span>
+      <span class="n">my_dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">get_stc</span><span class="p">)</span>
+
+  <span class="k">else</span> <span class="p">:</span>
+    <span class="n">imp_stc</span> <span class="o">=</span> <span class="s1">&#39;tidak ada&#39;</span>
+  <span class="n">imp_sc_result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">imp_stc</span><span class="p">)</span>
+<span class="c1"># Memasukkan hasil list ringkasan ke dalam dictionary ringkasan</span>
+<span class="n">kal_imp</span><span class="p">[</span><span class="s1">&#39;ringkasan&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">imp_sc_result</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Menggabungkan ringkasan ke dalam data hasil crawling</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Join hasil kalimat penting ke dalam data hasil crawling</span>
+<span class="n">framedt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">kal_imp</span><span class="p">)</span>
+<span class="n">cat_drop</span> <span class="o">=</span> <span class="n">termFreq</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;Kategori&#39;</span><span class="p">)</span>
+<span class="n">cat</span> <span class="o">=</span> <span class="n">termFreq</span><span class="p">[</span><span class="s1">&#39;Kategori&#39;</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">cat_drop</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">framedt</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-a55365d1-cc99-4fe8-8a51-ccd92545192a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>Judul</th>
+      <th>Isi</th>
+      <th>ringkasan</th>
+      <th>Kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>Pesan Alan Budikusuma: Bulutangkis Menjanjikan...</td>
+      <td>Legenda bulutangkis Indonesia Alan Budikusuma ...</td>
+      <td>"Kami bersyukur pelaksanaan Badminton Fun Fes...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>Pembibitan Atlet Wing Chun Dapat Dukungan</td>
+      <td>Olahraga Wing Chun Indonesia terus berkembang....</td>
+      <td>Dukungan mereka dalam pembibitan atlet dan ta...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>Diskon Eksklusif Bank Mega, Tawarkan Pengalama...</td>
+      <td>Sedari dulu golf bukanlah olahraga yang ecek-e...</td>
+      <td>Melalui Mega Travel Card, Mega Visa Platinum,...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>Head to Head Leo/Daniel vs Reddy/Shetty: The B...</td>
+      <td>Leo Rolly Carnando/Daniel Marthin berhadapan d...</td>
+      <td>Dalam kejuaraan di Denmark itu, Reddy/Shetty ...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>Ranking BWF Pekan Ini: Jonatan Dekati Anthony ...</td>
+      <td>Tunggal putra Indonesia Jonatan Christie terus...</td>
+      <td>Sementara ganda putra, Bagas Maulana/Muhammad...</td>
+      <td>detiksport</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>47</td>
+      <td>Ada 7 Kasus di DKI, Kemenkes Perketat Pemantau...</td>
+      <td>Telah ditemukan tujuh kasus cacar monyet atau ...</td>
+      <td>Untuk negara tetangga seperti Thailand saat i...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>48</td>
+      <td>Update Kasus Cacar Monyet di Jakarta, Ini Sede...</td>
+      <td>Kabid P2P Dinkes DKI Jakarta dr Dwi Oktavia, M...</td>
+      <td>Adapun berikut ini gejala-gejala yang ditemuk...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>49</td>
+      <td>Fakta-fakta Kasus Baru Cacar Monyet 'Mpox' di ...</td>
+      <td>Kasus cacar monyet atau monkeypox di Indonesia...</td>
+      <td>Indonesia.dr Syahril melaporkan semua pasien ...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>50</td>
+      <td>2 Kasus Baru Mpox Ditemukan di DKI! Ini Urutan...</td>
+      <td>Pasien cacar monyet atau Mpox terus bertambah ...</td>
+      <td>"Pasien ketiga gejala seperti pasien Mpox seb...</td>
+      <td>detikhealth</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>51</td>
+      <td>6 Wilayah Blue Zone yang Warganya Berumur Panj...</td>
+      <td>Blue Zone atau Zona Biru adalah istilah yang d...</td>
+      <td>Warga Nicoya juga memiliki pola makan yang re...</td>
+      <td>detikhealth</td>
+    </tr>
+  </tbody>
+</table>
+<p>115 rows × 5 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a55365d1-cc99-4fe8-8a51-ccd92545192a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a55365d1-cc99-4fe8-8a51-ccd92545192a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a55365d1-cc99-4fe8-8a51-ccd92545192a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-9cf0ea9b-0dde-4169-8584-55d76e169cd3">
+  <button class="colab-df-quickchart" onclick="quickchart('df-9cf0ea9b-0dde-4169-8584-55d76e169cd3')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-9cf0ea9b-0dde-4169-8584-55d76e169cd3 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<p>Menyimpan hasil dalam bentuk csv</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">result</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;dataset_detik.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="all_uts.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Crawling PTA</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-berita">Crawling berita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-detiksport">Crawling DetikSport</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crawling-detikhealth">Crawling DetikHealth</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-kalimat">Ekstraksi kalimat</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekstraksi-pada-seluruh-data">Ekstraksi pada seluruh data</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ahmad Faikh Irfan Abu Sa'ad
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
