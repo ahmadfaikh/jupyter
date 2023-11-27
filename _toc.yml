@@ -7,5 +7,5 @@ chapters:
   # - file: markdown
   # - file: notebooks
   # - file: markdown-notebooks
-  - file: Crawling_fix
   - file: all_uts
+  - file: crawl_detik_fix
