@@ -4,8 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-  # - file: markdown
-  # - file: notebooks
-  # - file: markdown-notebooks
   - file: all_uts
   - file: crawl_detik_fix
+  - file: Klasifikasi_berita
+  - file: implementasi

@@ -3,3 +3,6 @@ matplotlib
 numpy
 pandas
 request
+nltk
+pickleshare
+scikit-learn

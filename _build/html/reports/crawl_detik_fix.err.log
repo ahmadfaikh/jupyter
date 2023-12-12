@@ -15,18 +15,73 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from google.colab import drive
-drive.mount('/content/drive')
-%cd /content/drive/MyDrive/PPW/
+def crawl_detiksport(url):
+  berita_list = []
+  for halaman in range(1):
+    url = url
+    #mengambil data dari detik.com
+    # req = requests.get(url,header)
+    req = requests.get(url).content
+    # soup = BeautifulSoup(req.text,'lxml')
+    soup = BeautifulSoup(req,'lxml')
+    listberita = soup.find('div',class_='list media_rows list-berita')
+    artikel = listberita.find_all('article')
+    for x in artikel:
+      url2 = x.find('a')['href']
+      judul = x.find('a').find('h2').text
+      #mengambil data dari setiap konten
+      # urlkonten = requests.get(url2,header)
+      urlkonten = requests.get(url2).content
+      soupkonten = BeautifulSoup(urlkonten,'lxml')
+      konten = soupkonten.find_all('div',class_='detail__body-text itp_bodycontent')
+      for x in konten:
+        kategori = 'sport'
+        isi = x.find_all('p')
+        y = [y.text for y in isi]
+        fixkonten = ''.join(y).replace('\n','').replace('ADVERTISEMENT','').replace('SCROLL TO RESUME CONTENT','')
+        berita_list.append([judul,fixkonten, kategori])
+  return berita_list
+
+# urlnews = 'https://www.detik.com/search/searchall?query=terbaru&siteid=21&sortby=time&page=2'
+# get_news = crawl_detiksport(urlnews)
+data = []
+for i in range(1,40):
+  cr = crawl_detiksport('https://www.detik.com/search/searchall?query=terbaru&siteid=21&sortby=time&page=%d'%i)
+  data = data+cr
+frame_detiksport = pd.DataFrame(data,columns =['Judul','Isi','Kategori'])
+frame_detiksport
+# frame_berita.to_csv('crawl_detiksport.csv')
+
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [1;32mIn[1], line 1[0m
-[1;32m----> 1[0m [38;5;28;01mfrom[39;00m [38;5;21;01mgoogle[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcolab[39;00m [38;5;28;01mimport[39;00m drive
-[0;32m      2[0m drive[38;5;241m.[39mmount([38;5;124m'[39m[38;5;124m/content/drive[39m[38;5;124m'[39m)
-[0;32m      3[0m get_ipython()[38;5;241m.[39mrun_line_magic([38;5;124m'[39m[38;5;124mcd[39m[38;5;124m'[39m, [38;5;124m'[39m[38;5;124m/content/drive/MyDrive/PPW/[39m[38;5;124m'[39m)
+[1;31mFeatureNotFound[0m                           Traceback (most recent call last)
+Cell [1;32mIn[2], line 32[0m
+[0;32m     30[0m data [38;5;241m=[39m []
+[0;32m     31[0m [38;5;28;01mfor[39;00m i [38;5;129;01min[39;00m [38;5;28mrange[39m([38;5;241m1[39m,[38;5;241m40[39m):
+[1;32m---> 32[0m   cr [38;5;241m=[39m [43mcrawl_detiksport[49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mhttps://www.detik.com/search/searchall?query=terbaru&siteid=21&sortby=time&page=[39;49m[38;5;132;43;01m%d[39;49;00m[38;5;124;43m'[39;49m[38;5;241;43m%[39;49m[43mi[49m[43m)[49m
+[0;32m     33[0m   data [38;5;241m=[39m data[38;5;241m+[39mcr
+[0;32m     34[0m frame_detiksport [38;5;241m=[39m pd[38;5;241m.[39mDataFrame(data,columns [38;5;241m=[39m[[38;5;124m'[39m[38;5;124mJudul[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mIsi[39m[38;5;124m'[39m,[38;5;124m'[39m[38;5;124mKategori[39m[38;5;124m'[39m])
 
-[1;31mModuleNotFoundError[0m: No module named 'google.colab'
+Cell [1;32mIn[2], line 9[0m, in [0;36mcrawl_detiksport[1;34m(url)[0m
+[0;32m      7[0m req [38;5;241m=[39m requests[38;5;241m.[39mget(url)[38;5;241m.[39mcontent
+[0;32m      8[0m [38;5;66;03m# soup = BeautifulSoup(req.text,'lxml')[39;00m
+[1;32m----> 9[0m soup [38;5;241m=[39m [43mBeautifulSoup[49m[43m([49m[43mreq[49m[43m,[49m[38;5;124;43m'[39;49m[38;5;124;43mlxml[39;49m[38;5;124;43m'[39;49m[43m)[49m
+[0;32m     10[0m listberita [38;5;241m=[39m soup[38;5;241m.[39mfind([38;5;124m'[39m[38;5;124mdiv[39m[38;5;124m'[39m,class_[38;5;241m=[39m[38;5;124m'[39m[38;5;124mlist media_rows list-berita[39m[38;5;124m'[39m)
+[0;32m     11[0m artikel [38;5;241m=[39m listberita[38;5;241m.[39mfind_all([38;5;124m'[39m[38;5;124marticle[39m[38;5;124m'[39m)
+
+File [1;32m~\AppData\Local\Programs\Python\Python310\lib\site-packages\bs4\__init__.py:250[0m, in [0;36mBeautifulSoup.__init__[1;34m(self, markup, features, builder, parse_only, from_encoding, exclude_encodings, element_classes, **kwargs)[0m
+[0;32m    248[0m     builder_class [38;5;241m=[39m builder_registry[38;5;241m.[39mlookup([38;5;241m*[39mfeatures)
+[0;32m    249[0m     [38;5;28;01mif[39;00m builder_class [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+[1;32m--> 250[0m         [38;5;28;01mraise[39;00m FeatureNotFound(
+[0;32m    251[0m             [38;5;124m"[39m[38;5;124mCouldn[39m[38;5;124m'[39m[38;5;124mt find a tree builder with the features you [39m[38;5;124m"[39m
+[0;32m    252[0m             [38;5;124m"[39m[38;5;124mrequested: [39m[38;5;132;01m%s[39;00m[38;5;124m. Do you need to install a parser library?[39m[38;5;124m"[39m
+[0;32m    253[0m             [38;5;241m%[39m [38;5;124m"[39m[38;5;124m,[39m[38;5;124m"[39m[38;5;241m.[39mjoin(features))
+[0;32m    255[0m [38;5;66;03m# At this point either we have a TreeBuilder instance in[39;00m
+[0;32m    256[0m [38;5;66;03m# builder, or we have a builder_class that we can instantiate[39;00m
+[0;32m    257[0m [38;5;66;03m# with the remaining **kwargs.[39;00m
+[0;32m    258[0m [38;5;28;01mif[39;00m builder [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m:
+
+[1;31mFeatureNotFound[0m: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
 
